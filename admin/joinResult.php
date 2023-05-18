@@ -4,7 +4,7 @@
     $adminName = $_POST['youName'];
     $adminEmail = $_POST['youEmail'];
     $adminNick = $_POST['youNick'];
-    $adminPass = $_POST['youPass'];
+    $adminPass = sha1($_POST['youPass']);
     $adminBirth = $_POST['youBirth'];
     $adminPhone = $_POST['youPhone'];
     $regTime = time();

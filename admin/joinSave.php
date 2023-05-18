@@ -33,59 +33,60 @@
                     </ul>
                 </div>
                 <div class="join__form">
-                <form action="joinResult.php" name="joinResult" method="post" onsubmit="return joinChecks()">
-                    <fieldset>
-                        <legend class="blind">회원가입 영역</legend>
-                        <div>
-                            <label for="youName" class="required">이름</label>
-                            <input type="text" id="youName" name="youName" class="inputStyle" maxlength="5" placeholder="이름을 적어주세요!" require>
-                            <p class="msg" id="youNameComment"><!--이름은 한글로만 작성할 수 있습니다.--></p>
-                        </div>
-                        <div class="over">
-                            <label for="youEmail" class="required">이메일</label>
-                            <input type="email" id="youEmail" name="youEmail" class="inputStyle" placeholder="이메일을 적어주세요!" require>
-                            <a href="#c" class="youCheck" onclick="emailChecking()">이메일 중복검사</a>
-                            <p class="msg" id="youEmailComment"><!--이메일이 존재합니다.--></p>
-                        </div>
-                        <div class="over">
-                            <label for="youNick" class="required">닉네임</label>
-                            <input type="text" id="youNick" name="youNick" class="inputStyle" placeholder="닉네임을 적어주세요!" require>
-                            <a href="#c" class="youCheck" onclick="nickChecking()">닉네임 중복검사</a>
-                            <p class="msg" id="youNickComment"><!--닉네임이 존재합니다.--></p>
-                        </div>
-                        <div>
-                            <label for="youPass" class="required">비밀번호</label>
-                            <input type="password" id="youPass" name="youPass" class="inputStyle" placeholder="비밀번호를 적어주세요!" require>
-                            <p class="msg" id="youPassComment"><!--비밀번호, 특수기호, 숫자가 들어가야 합니다.--></p>
-                        </div>
-                        <div>
-                            <label for="youPassC" class="required">비밀번호 확인</label>
-                            <input type="password" id="youPassC" name="youPassC" class="inputStyle" placeholder="다시 한번 비밀번호를 적어주세요!" require>
-                            <p class="msg" id="youPassCComment"><!--비밀번호가 일치하지 않습니다.--></p>
-                        </div>
-                        <div>
-                            <label for="youBirth" class="required">생년월일</label>
-                            <input type="text" id="youBirth" name="youBirth" class="inputStyle" placeholder="YYYY-MM-DD" require>
-                            <p class="msg" id="youBirthComment"><!--생년월일이 일치하지 않습니다.--></p>
-                        </div>
-                        <div>
-                            <label for="youPhone" class="required">연락처</label>
-                            <input type="text" id="youPhone" name="youPhone" class="inputStyle" maxlength="15" placeholder="연락처를 적어주세요!" require>
-                            <p class="msg" id="youPhoneComment"><!--휴대폰 번호를 입력해주세요.--></p>
-                        </div>
-                        <button type="submit" class="btnStyle">회원가입 완료</button>
-                    </fieldset>
-                </form>
+                    <form action="joinResult.php" name="joinResult" method="post" onsubmit="return joinChecks()">
+                        <fieldset>
+                            <legend class="blind">회원가입 영역</legend>
+                            <div>
+                                <label for="youName" class="required">이름</label>
+                                <input type="text" id="youName" name="youName" class="inputStyle" maxlength="5" placeholder="이름을 적어주세요!" require>
+                                <p class="msg" id="youNameComment"><!--이름은 한글로만 작성할 수 있습니다.--></p>
+                            </div>
+                            <div class="over">
+                                <label for="youEmail" class="required">이메일</label>
+                                <input type="email" id="youEmail" name="youEmail" class="inputStyle" placeholder="이메일을 적어주세요!" require>
+                                <a href="#c" class="youCheck" onclick="emailChecking()">이메일 중복검사</a>
+                                <p class="msg" id="youEmailComment"><!--이메일이 존재합니다.--></p>
+                            </div>
+                            <div class="over">
+                                <label for="youNick" class="required">닉네임</label>
+                                <input type="text" id="youNick" name="youNick" class="inputStyle" placeholder="닉네임을 적어주세요!" require>
+                                <a href="#c" class="youCheck" onclick="nickChecking()">닉네임 중복검사</a>
+                                <p class="msg" id="youNickComment"><!--닉네임이 존재합니다.--></p>
+                            </div>
+                            <div>
+                                <label for="youPass" class="required">비밀번호</label>
+                                <input type="password" id="youPass" name="youPass" class="inputStyle" placeholder="비밀번호를 적어주세요!" require>
+                                <p class="msg" id="youPassComment"><!--비밀번호, 특수기호, 숫자가 들어가야 합니다.--></p>
+                            </div>
+                            <div>
+                                <label for="youPassC" class="required">비밀번호 확인</label>
+                                <input type="password" id="youPassC" name="youPassC" class="inputStyle" placeholder="다시 한번 비밀번호를 적어주세요!" require>
+                                <p class="msg" id="youPassCComment"><!--비밀번호가 일치하지 않습니다.--></p>
+                            </div>
+                            <div>
+                                <label for="youBirth" class="required">생년월일</label>
+                                <input type="text" id="youBirth" name="youBirth" class="inputStyle" placeholder="YYYY-MM-DD" require>
+                                <p class="msg" id="youBirthComment"><!--생년월일이 일치하지 않습니다.--></p>
+                            </div>
+                            <div>
+                                <label for="youPhone" class="required">연락처</label>
+                                <input type="text" id="youPhone" name="youPhone" class="inputStyle" maxlength="15" placeholder="연락처를 적어주세요!" require>
+                                <p class="msg" id="youPhoneComment"><!--휴대폰 번호를 입력해주세요.--></p>
+                            </div>
+                            <button type="submit" class="btnStyle">회원가입 완료</button>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
     <!-- //main -->
     <?php include "../include/footer.php" ?>
     <!-- //footer -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         let isEmailCheck = false;
-        let isNickCheck = false;
+        let isNickCheck = false; 
+        
         function emailChecking(){
             let youEmail = $("#youEmail").val();
             if(youEmail == null || youEmail == ''){

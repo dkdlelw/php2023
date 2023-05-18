@@ -120,14 +120,14 @@
                         위 개인정보 수집에 대하여 동의합니다.<br>
 
                         ※ 동의하지 않을 경우 회원 가입이 제한될 수 있습니다.
-                        <div class="check">
-                            <input type="checkbox" id="agree2">
-                            <label for="agree">개인정보 수집 및 이용동의</label>
-                        </div>
-                        <div>
-                            <p class="agreeMsg">and</p>
-                            <button href="joinSave.php" class="btnStyle agreeBtn">동의</button>
-                        </div>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="agree2">
+                        <label for="agree">개인정보 수집 및 이용동의</label>
+                    </div>
+                    <div>
+                        <p class="agreeMsg">and</p>
+                        <button href="admin/joinSave.php" class="btnStyle agreeBtn">동의</button>
                     </div>
                 </div>
             </div>
