@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1:1 상담 글쓰기</title>
+    <link href="https://webfontworld.github.io/cookierun/CookieRun.css" rel="stylesheet">
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header id="header">
+        <header id="header">
+            <div class="header__inner">
+                <div class="util">
+                    <h1><a href="http://zany1346.dothome.co.kr/php2/html/main.html">영양많닭</a></h1>
+                    <ul>
+                        <li><a href="joinup.html">회원가입</a></li>
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="myPage.html">마이페이지</a></li>
+                        <li><a href="serviceCenter.html">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li class="nav__link"><a href="#">신제품</a></li>
+                <li class="nav__link"><a href="#">랭킹</a></li>
+                <li class="nav__link"><a href="#">MyPick</a></li>
+                <li class="nav__link"><a href="#">브랜드관</a></li>
+                <li class="nav__link"><a href="#">커뮤니티</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- // nav -->
+    <main id="main">
+        <div class="consultWrite__inner">
+            <h2 class="consult__title">1:1 상담</h2>
+            <form action="#" name="#" method="post">
+                <fieldset>
+                    <legend class="blind">1:1 상담하기</legend>
+                    <div class="consultWrite1">
+                        <label for="consult__type">상담유형</label>
+                        <select name="consult" id="consult">
+                            <option value="상담유형" disabled selected hidden>상담유형</option>
+                            <option value="불편사항">불편사항</option>
+                            <option value="질문사항">질문사항</option>
+                            <option value="기타">기타</option>
+                        </select>
+                        <input type="text" id="consultTitle" name="consultTitle" class="inputStyle" placeholder="제목을 입력해주세요!">
+                    </div>
+                    <div class="consultWrite2">
+                        <label for="consultContents">상담내용</label>
+                        <textarea name="consultContents" id="consultContents" rows="20"  class="inputStyle" placeholder="상담하실 내용을 입력해주세요"></textarea>
+                    </div>
+                    <button type="submit" class="consultBtn">문의하기</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

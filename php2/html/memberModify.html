@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header__inner">
+            <div class="util">
+                <h1><a href="http://kshkmn0929.dothome.co.kr/php2/html/main.html">영양많닭</a></h1>
+                <ul>
+                    <li><a href="joinup.html">회원가입</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="Mypage.html">마이페이지</a></li>
+                    <li><a href="serviceCenter.html">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+    <nav id="nav">
+        <ul>
+            <li><a href="#">신제품</a></li>
+            <li><a href="#">랭킹</a></li>
+            <li><a href="compare.html">MyPick</a></li>
+            <li><a href="#">브랜드관</a></li>
+            <li><a href="#">커뮤니티</a></li>
+        </ul>
+    </nav>
+    <!-- nav -->
+    <div id="memberModifyWrap">
+        <div id="memberModifymodal">
+            <div class="img1">
+                <img src="../assets/img/Ximg.svg" alt="닫기">
+            </div>
+            <div class="img2">
+                <img src="../assets/img/logo.svg" alt="로고">
+            </div>  
+            <div class="Termsup__form">
+                <form action="Termsup.php" name="Termsup" method="post">
+                    <fieldset>
+                        <legend class="blind">회원정보 수정 영역</legend>
+                        <div class="item">
+                            <div>
+                                <label for="youID">아이디</label><br>
+                                <input type="text" id="youID" class="inputStyle" name="youID" placeholder="아이디는 변경할 수 없습니다!" readonly>
+                            </div>
+                            <div>
+                                <label for="youEmail" class="required">이메일</label><br>
+                                <input type="text" id="youEmail" class="inputStyle" name="youEmail" placeholder="이메일을 적어주세요!" required>
+                            </div>
+                            <div>
+                                <label for="youPass" class="required">비밀번호</label><br>
+                                <input type="password" id="youPass" class="inputStyle"  name="youPass" placeholder="비밀번호를 적어주세요!" required>
+                            </div>
+                            <div>
+                                <label for="youPassC" class="required">비밀번호 확인</label><br>
+                                <input type="password" id="youPassC" class="inputStyle"  name="youPassC" placeholder="다시 비밀번호를 적어주세요!" required>
+                            </div>
+                            <div>
+                                <label for="youName" class="required">이름</label><br>
+                                <input type="text" id="youName" class="inputStyle" name="youName" placeholder="이름은 변경 하실 수 없습니다!" readonly>
+                            </div>
+                            <div>
+                                <label for="youPhone" class="required">연락처</label><br>
+                                <input type="text" id="youPhone" class="inputStyle"  name="youPhone" placeholder="연락처를 적어주세요!" required>
+                            </div>
+                        </div>
+                        <div class="changeimg">
+                            <img src="../assets/img/websimg.svg" alt="프로필 이미지">
+                        </div>
+                        <input type="file" id="imageUpload" accept="image/*">
+                        <button type="submit" class="button">가입하기</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container"> 
+        <div class="footer__text">
+            <a href="#">공지사항</a> | 
+            <a href="#">자주받는질문</a> | 
+            <a href="#" class="active">1:1질문</a> |
+            <a href="#">이용약관</a> |
+            <a href="#">개인정보처리방침</a></div>
+        </div>
+        <address>
+            영양많닭(주) | 대표자: 1조<br>
+            주소:안산시 단원구 고잔동 535-2번지 라인컴퓨터아트학원  | 사업자등록번호: 준비중<br>
+            통신판매업신고: 준비중 | 개인정보보호책임자: 1조
+        </address>
+    </footer>
+    <!-- footer -->
+</body>
+</html>
